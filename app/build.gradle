@@ -1,0 +1,42 @@
+apply plugin: 'com.android.application'
+
+android {
+/**
+    signingConfigs{
+        release{
+            keyAlias 'keystore'
+            keyPassword 'FJS123'
+            storeFile file('C:/Users/FJS0420/keystore.jks')
+            storePassword 'FJS123'
+        }
+    }
+ */
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+
+    defaultConfig {
+        applicationId "com.example.dijkstra_demo"
+        minSdkVersion 16
+        targetSdkVersion 23
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'com.android.support:appcompat-v7:23.0.1'
+    compile files('libs/baidumapapi_base_v3_7_1.jar')
+    compile files('libs/baidumapapi_cloud_v3_7_1.jar')
+    compile files('libs/baidumapapi_map_v3_7_1.jar')
+    compile files('libs/baidumapapi_radar_v3_7_1.jar')
+    compile files('libs/baidumapapi_search_v3_7_1.jar')
+    compile files('libs/baidumapapi_util_v3_7_1.jar')
+}

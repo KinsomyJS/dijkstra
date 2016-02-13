@@ -1,9 +1,0 @@
-<component name="libraryTable">
-  <library name="Dijkstra">
-    <CLASSES>
-      <root url="jar://$PROJECT_DIR$/out/artifacts/Dijkstra_jar/Dijkstra.jar!/" />
-    </CLASSES>
-    <JAVADOC />
-    <SOURCES />
-  </library>
-</component>
